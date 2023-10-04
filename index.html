@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Survey</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Car Survey</h1><br>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li><br>
+                <li><a href="#about">About</a></li><br>
+                <li><a href="#products">Our Products</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section class="container">
+        <form id="carSurveyForm">
+            <label for="favoriteBrand">1. What is your favorite car brand?</label>
+            <input type="text" id="favoriteBrand" name="favoriteBrand" required>
+
+            <label for="carType">2. Which type of car do you prefer?</label>
+            <select id="carType" name="carType">
+                <option value="sedan">Sedan</option>
+                <option value="SUV">SUV</option>
+                <option value="sportsCar">Sports Car</option>
+            </select>
+
+            <label for="dreamCar">3. What is your dream car model?</label>
+            <input type="text" id="dreamCar" name="dreamCar" required>
+
+            <label for="carUsage">4. How often do you use a car?</label>
+            <input type="radio" id="daily" name="carUsage" value="Daily">
+            <label for="daily">Daily</label>
+            <input type="radio" id="weekly" name="carUsage" value="Weekly">
+            <label for="weekly">Weekly</label>
+            <input type="radio" id="monthly" name="carUsage" value="Monthly">
+            <label for="monthly">Monthly</label>
+
+            <label for="transmission">5. Do you prefer manual or automatic transmission?</label>
+            <input type="radio" id="manual" name="transmission" value="Manual">
+            <label for="manual">Manual</label>
+            <input type="radio" id="automatic" name="transmission" value="Automatic">
+            <label for="automatic">Automatic</label>
+
+            <label for="carColor">6. What color do you like for cars?</label>
+            <input type="color" id="carColor" name="carColor">
+
+            <label for="modifiedCar">7. Have you ever modified your car?</label>
+            <input type="radio" id="yes" name="modifiedCar" value="Yes">
+            <label for="yes">Yes</label>
+            <input type="radio" id="no" name="modifiedCar" value="No">
+            <label for="no">No</label>
+
+            <label for="carFeatures">8. What features are important to you in a car?</label>
+            <input type="checkbox" id="safety" name="carFeatures" value="Safety">
+            <label for="safety">Safety</label>
+            <input type="checkbox" id="fuelEfficiency" name="carFeatures" value="Fuel Efficiency">
+            <label for="fuelEfficiency">Fuel Efficiency</label>
+            <input type="checkbox" id="technology" name="carFeatures" value="Technology">
+            <label for="technology">Technology</label>
+
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
